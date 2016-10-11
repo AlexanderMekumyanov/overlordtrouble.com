@@ -5,3 +5,96 @@ img.heroes{
 img.boss{
 	max-height: 400px;
 }
+
+.parallax video {
+	width: 100%;
+}
+
+.my_header{
+	height: auto;
+}
+.my_header > .section{
+	padding-top: 0;
+}
+.my_header .section .container .row{
+	margin-bottom: 0;
+}
+.my_header .container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.my_header .parallax{
+	position: initial;
+}
+
+
+
+
+
+
+
+.my_battle{
+	height: auto;
+}
+.my_battle > .section{
+	padding-top: 0;
+}
+.my_battle .section .container .row{
+	margin-bottom: 0;
+}
+.my_battle .container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.my_battle .parallax{
+	position: initial;
+}
+
+
+
+
+
+
+.my_container_for_boss .boss_bg{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:contain;
+}
+
+
+
+
+
+
+footer.page-footer{
+	margin-top: 0;
+}
+
+
+
+
+
+
+
+div.my_hr{
+	border-top: 4px solid #222;
+	border-bottom: 4px solid #222;
+    background-color: #2b483d;
+    padding-top: 7px;
+    position: relative;
+}
+div.my_hr .my_hr_seecond_bg{
+	position: absolute;
+	content: '';
+	top:0;
+	bottom: 4px;
+	left: 0;
+	right: 0;
+	background-color: #81a07e;
+}
