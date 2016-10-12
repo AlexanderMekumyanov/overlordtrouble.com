@@ -26,7 +26,7 @@
       </div>
     </div>
     <div class="parallax">
-      <video playsinline autoplay autobuffer muted loop poster="img/headerposter.png">
+      <video id="video1" playsinline autoplay autobuffer muted loop poster="img/headerposter.png">
         <source src="video/header.m4v">
         <source src="video/header.ogv" type='video/ogg; codecs="theora, vorbis"'>
         <source src="video/header.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
@@ -133,7 +133,7 @@
 
   <div class="my_classes">
     <div class="classes_bg">
-      <video playsinline autoplay muted loop autobuffer poster="img/battlesystemposter.png">
+      <video id="video2" playsinline autoplay muted loop autobuffer poster="img/battlesystemposter.png">
         <source src="video/BattleSystem.m4v">
         <source src="video/BattleSystem.ogv" type='video/ogg; codecs="theora, vorbis"'>
         <source src="video/BattleSystem.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
@@ -219,7 +219,16 @@
     </div>
   </footer>
 
-
+  <script type="text/javascript">
+    var video1 = document.getElementById('video1');
+    video1.addEventListener('click',function(){
+      video1.play();
+    },false);
+    var video2 = document.getElementById('video2');
+    video2.addEventListener('click',function(){
+      video2.play();
+    },false);
+  </script>
   <!--  Scripts-->
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript">
