@@ -220,14 +220,13 @@
   </footer>
 
   <script type="text/javascript">
-    var video1 = document.getElementById('video1');
-    video1.addEventListener('click',function(){
-      video1.play();
-    },false);
+    var video1 = document.getElementById('video1');    
     var video2 = document.getElementById('video2');
-    video2.addEventListener('click',function(){
+    function ready() {
+      video1.play();    
       video2.play();
-    },false);
+    }
+    document.addEventListener("DOMContentLoaded", ready);
   </script>
   <!--  Scripts-->
   <!-- Yandex.Metrika counter -->
