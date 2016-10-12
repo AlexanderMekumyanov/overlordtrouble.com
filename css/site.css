@@ -1,3 +1,30 @@
+@font-face {
+    font-family: Kelvinch; /* Имя шрифта */
+    src: url(../fonts/kelvinch/Kelvinch-Roman.otf); /* Путь к файлу со шрифтом */
+}
+
+
+
+
+html{
+	font-family: Kelvinch;
+	font-size: 1.2rem;
+}
+@media screen and (max-width: 700px) {
+	html{
+		font-size: 1.1rem;
+	}
+}
+@media screen and (max-width: 600px) {
+	html{
+		font-size: 1rem;
+	}
+}
+@media screen and (max-width: 400px) {
+	html{
+		font-size: 0.8rem;
+	}
+}
 img.heroes{
 	max-height: 200px;
 }
@@ -12,6 +39,10 @@ img.boss{
 
 .my_header{
 	height: auto;
+	max-height: 500px;
+}
+.my_header .parallax{
+	margin-bottom: -7px;
 }
 .my_header > .section{
 	padding-top: 0;
@@ -31,11 +62,120 @@ img.boss{
 }
 
 
+.my_youtube_button{
+	display: block;
+	background-image: url(../img/play.png);
+	width: 100px;
+	height: 100px;
+	background-size: contain;
+	margin: 0 auto;
+	margin-top: 1rem;
+	z-index: 1;
+	border-radius: 50px;
+}
+
+.my_youtube_link{
+	text-shadow: #212121 0 0 5px;
+	font-size: 1.2rem;
+}
+.logo img{
+		margin-top: 50px;
+		width: 50%;
+	}
+@media screen and (max-width: 700px) {
+	.my_youtube_button{
+    	width: 50px;
+		height: 50px;
+	}
+	.logo img{
+		margin-top: 30px;
+		width: 30%;
+	}
+}
+@media screen and (max-width: 600px) {
+	.my_youtube_button{
+    	width: 50px;
+		height: 50px;
+	}
+	.logo img{
+		margin-top: 10px;
+		width: 30%;
+	}
+}
+@media screen and (max-width: 400px) {
+	.my_youtube_button{
+    	width: 25px;
+		height: 25px;
+	}
+	.my_youtube_link{
+		font-size: 0.8rem;
+	}
+}
 
 
 
 
 
+
+
+.attachment-medium{
+	width: 100%;
+    max-width: 264px;
+}
+
+
+
+
+
+
+
+
+
+.my_episod{
+	background: linear-gradient(to top, #536653, #b4d3b4);
+}
+.my_episod p{
+	color: black;
+}
+
+
+
+
+
+
+.my_classes, .my_battle, .my_plot{
+	position: relative;
+}
+
+.my_classes > .classes_bg{
+	margin-bottom: -6px;
+}
+.my_classes > .classes_bg > video{
+	width: 100%;
+}
+.my_plot .description,
+.my_battle .description,
+.my_classes .description{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: auto;
+	background: rgba(0,0,0,.7);
+    color: white;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/*
 .my_battle{
 	height: auto;
 }
@@ -54,17 +194,53 @@ img.boss{
 }
 .my_battle .parallax{
 	position: initial;
+}*/
+
+
+
+
+
+.bosses.section{
+	padding-bottom: 0;
 }
-
-
-
-
-
-
-.my_container_for_boss .boss_bg{
+.my_container_for_boss{
+	margin-bottom: 0;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: bottom center;
 	background-size:contain;
+}
+.my_container_for_boss .boss_bg{
+	margin-bottom: 1000px;
+}
+@media screen and (max-width: 1400px) {
+	.my_container_for_boss .boss_bg{
+		margin-bottom: 870px;
+	}
+}
+@media screen and (max-width: 1200px) {
+	.my_container_for_boss .boss_bg{
+		margin-bottom: 720px;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.my_container_for_boss .boss_bg{
+		margin-bottom: 600px;
+	}
+}
+@media screen and (max-width: 800px) {
+	.my_container_for_boss .boss_bg{
+		margin-bottom: 500px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.my_container_for_boss .boss_bg{
+		margin-bottom: 400px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.my_container_for_boss .boss_bg{
+		margin-bottom: 300px;
+	}
 }
 
 
@@ -74,6 +250,54 @@ img.boss{
 
 footer.page-footer{
 	margin-top: 0;
+}
+.social{
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+@media screen and (max-width: 700px) {
+	.social{
+		width: 40px;
+		height: 40px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.social{
+		width: 30px;
+		height: 30px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.social{
+		width: 25px;
+		height: 25px;
+	}
+}
+.social.vk{
+	background-image:url(../img/vk.png);
+}
+.social.fb{
+	background-image:url(../img/fb.png);
+}
+.social.yt{
+	background-image:url(../img/youtube.png);
+}
+.social.tw{
+	background-image:url(../img/twitter.png);
+}
+.page-footer ul{
+	list-style: none;
+}
+.page-footer ul > li {
+	display: inline-block;
+}
+.page-footer .row{
+	margin-bottom:0;
 }
 
 
@@ -98,3 +322,8 @@ div.my_hr .my_hr_seecond_bg{
 	right: 0;
 	background-color: #81a07e;
 }
+
+
+
+
+
